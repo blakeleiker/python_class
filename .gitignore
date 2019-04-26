@@ -1,0 +1,38 @@
+# build products
+*.[oa]
+*.gcno
+*.gcda
+*.gch
+*.pyc
+object_*
+RUN_*
+
+*.csv
+*.header
+
+*.csv
+*.header
+
+# editor temporary files
+*.swp
+*~
+
+# ctags tags files
+tags
+
+# Trick-generated files and folders
+# found in model and sim directories
+xml
+
+# Eclipse specific files
+Debug
+.cproject
+.project
+
+*.png
+
+.idea
+
+.ipynb_checkpoints
+
+*.DS_Store

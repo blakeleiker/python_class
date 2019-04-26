@@ -1,0 +1,5 @@
+docker run -it \
+    --name="py_assignment_container" \
+    --volume="`pwd`/../:/python-assignment:rw" \
+    python-assignment:latest \
+    bash
