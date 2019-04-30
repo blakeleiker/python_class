@@ -1,56 +1,22 @@
 stages:
-    - Fetch
     - Test
 
-
-Fetch Artifacts:
-    stage: Fetch
-    only:
-        - schedules
-        - triggers
-        - web
-    image: esgl-gitlab.jsc.nasa.gov:5005/dsg_gnc_analysis/dsg_analysis:latest
-    tags:
-        - docker
-    script:
-          # These Environment Variables are set by an external pipeline trigger.
-        - echo $EXTERNAL_PIPELINE_CMD
-        - python tools/ci_tools/ci_tools.py -g "$GROUP_NAME" -p "$PROJECT_NAME" -b "$BRANCH_NAME" -j "$JOB_NAME"
-        - ls 
-
-Test trickpd:
+Test unit-tests:
     stage: Test
-    image: esgl-gitlab.jsc.nasa.gov:5005/dsg_gnc_analysis/dsg_analysis:latest
+    image: mikepantz/python_class:latest
     tags:
         - docker
     script:
-        - cd tools/pandas_tools/test
-        - python test_TrickPd.py
+        - cd tests
+        - nosetests
 
-Test plots:
+.Test notebook:
     stage: Test
-    image: esgl-gitlab.jsc.nasa.gov:5005/dsg_gnc_analysis/dsg_analysis:latest
+    image: mikepantz/python_class:latest
     tags:
         - docker
     script:
-        - cd tools/pandas_tools/test
-        - python test_Plots.py
-        - mv *.png ../../..
-    artifacts:
-        name: "$CI_JOB_NAME-$CI_COMMIT_REF_NAME"
-        paths:
-          - ./*.png
-        expire_in: 1 week
-
-Test notebook:
-    stage: Test
-    image: esgl-gitlab.jsc.nasa.gov:5005/dsg_gnc_analysis/dsg_analysis:latest
-    tags:
-        - docker
-    script:
-        - cd tools/pandas_tools/test/sample_notebook
-        - jupyter-nbconvert --to html --execute SampleNotebook.ipynb
-        - mv *.html ../../../..
+        - jupyter-nbconvert --to html --execute Assignment.ipynb
     artifacts:
         name: "$CI_JOB_NAME-$CI_COMMIT_REF_NAME"
         paths:
