@@ -1,5 +1,6 @@
 docker run -it \
-    --name="py_assignment_container" \
-    --volume="`pwd`/../:/python-assignment:rw" \
-    python-assignment:latest \
+    --name="python_class_container" \
+    --volume="`pwd`/../:/python_class:rw" \
+    -p 8888:8888 \
+    mikepantz/python_class:latest \
     bash

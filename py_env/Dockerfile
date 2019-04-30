@@ -1,9 +1,11 @@
-FROM centos7.6.1810
+FROM centos:7.6.1810
 MAINTAINER Mike Moore <michael.moore@nasa.gov>
 
-RUN yum install https://centos7.iuscommunity.org/ius-release.rpm
+RUN yum install -y epel-release
 
-RUN yum install python36u python36u-devel python36u-pip
+RUN yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+
+RUN yum install -y python36u python36u-devel python36u-pip
 
 RUN python3.6 -m pip install --upgrade pip
 
