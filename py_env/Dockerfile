@@ -13,4 +13,8 @@ RUN python3.6 -m pip install virtualenv
 
 COPY requirements.txt requirements.txt
 
+RUN virtualenv -p python3.6 /py_env
+
+RUN source /py_env/bin/activate
+
 RUN pip install -r requirements.txt
