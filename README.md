@@ -5,7 +5,7 @@ This repository contains course materials for an introductory course on the Pyth
 
 ## Getting started
 
-First, install pip3 and virtualenv.
+Your first task is to create a new python virtual environment. To do this, first you need to install pip3 and virtualenv.
 
 On Ubuntu:
 
@@ -40,13 +40,16 @@ If it can't find `pip3`, it probably installed it somewhere that's not on your P
 PATH=$PATH:$HOME/.local/bin
 ```
 
+Next, clone this repository and create your Python 3 virtualenv.
 
-Next, clone this repository and setup your Python 3 virtualenv.
 ```shell
 git clone https://github.com/blakeleiker/python_class.git
 cd python_class/py_env
+# Create a new environment named venv:
 virtualenv -p /usr/bin/python3 venv
+# Activate this environment:
 source venv/bin/activate
+# Install all of the packages listed in requirements.txt to this environment:
 pip3 install -r requirements.txt
 ```
 
@@ -67,7 +70,7 @@ Here's a list of useful resources for more information.
 10. [Modules and Code Re-Use](http://www.scipy-lectures.org/intro/language/reusing_code.html)
 11. [Object Oriented Programming](http://www.scipy-lectures.org/intro/language/oop.html)
 12. [Matplotlib Tutorial](https://matplotlib.org/stable/tutorials/index.html)
-13. [Jupyter Notebook Tutorial]()
+13. [Jupyter Notebook Tutorial](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## Contacts
 
