@@ -58,19 +58,26 @@ Now, you're ready to start the [first assignment](modules/Assignment1)!
 ## References
 Here's a list of useful resources for more information.
 
-1. [Ten Famous Python Applications](http://www.hartmannsoftware.com/Blog/Articles_from_Software_Fans/Most-Famous-Software-Programs-Written-in-Python)
-2. [The Incredible Growth of Python](https://stackoverflow.blog/2017/09/06/incredible-growth-python/)
-3. [Official Python Tutorial](https://docs.python.org/3/tutorial/)
-4. [Why Test Driven Development](https://medium.com/@gondy/the-importance-of-test-driven-development-f80b0d02edd8)
-5. [How to do Test Driven Development in Python](https://code.tutsplus.com/tutorials/beginning-test-driven-development-in-python--net-30137)
-6. [Python IDE Options](http://www.it4nextgen.com/7-best-ides-for-python-programming-in-2018/)
-7. [Virtual Environments](https://virtualenv.pypa.io)
-8. [Pip](https://pypi.org/project/pip/)
-9. [General Python Tutorial](http://www.scipy-lectures.org/intro/language/python_language.html)
-10. [Modules and Code Re-Use](http://www.scipy-lectures.org/intro/language/reusing_code.html)
-11. [Object Oriented Programming](http://www.scipy-lectures.org/intro/language/oop.html)
-12. [Matplotlib Tutorial](https://matplotlib.org/stable/tutorials/index.html)
-13. [Jupyter Notebook Tutorial](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+Documentation and tutorials:
+
+- [Official Python Tutorial](https://docs.python.org/3/tutorial/)
+- [Virtual Environments](https://virtualenv.pypa.io)
+- [Pip](https://pypi.org/project/pip/)
+- [General Python Tutorial](http://www.scipy-lectures.org/intro/language/python_language.html)
+- [Modules and Code Re-Use](http://www.scipy-lectures.org/intro/language/reusing_code.html)
+- [Object Oriented Programming](http://www.scipy-lectures.org/intro/language/oop.html)
+- [Numpy Tutorial](https://numpy.org/doc/stable/)
+- [Pandas Tutorial](https://pandas.pydata.org/docs/getting_started/index.html)
+- [Matplotlib Tutorial](https://matplotlib.org/stable/tutorials/index.html)
+- [Jupyter Notebook Tutorial](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+Interesting articles:
+
+- [Ten Famous Python Applications](http://www.hartmannsoftware.com/Blog/Articles_from_Software_Fans/Most-Famous-Software-Programs-Written-in-Python)
+- [The Incredible Growth of Python](https://stackoverflow.blog/2017/09/06/incredible-growth-python/)
+- [Why Test Driven Development](https://medium.com/@gondy/the-importance-of-test-driven-development-f80b0d02edd8)
+- [How to do Test Driven Development in Python](https://code.tutsplus.com/tutorials/beginning-test-driven-development-in-python--net-30137)
+- [Python IDE Options](http://www.it4nextgen.com/7-best-ides-for-python-programming-in-2018/)
 
 ## Contacts
 
