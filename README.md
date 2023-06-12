@@ -54,6 +54,8 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
+Note that if your virtual environment has been activated successfully, your terminal prompt should now start with `(venv)`. Every time you open a new terminal session, you will need to `source` the `activate` script in order to run the assignments in this course. 
+
 Now, you're ready to start the [first assignment](modules/Assignment1)!
 
 ## References
