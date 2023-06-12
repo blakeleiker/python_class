@@ -108,8 +108,7 @@ class TestAssignment1(TestCase):
         pass_status = my_assignment.check_requirement(test_df)
 
         # Using this test data, the requirement should pass.
-        # Note that this is equivalent to assert pass_status == True
-        assert pass_status
+        assert pass_status==True
 
 
     def test_main(self):
@@ -119,5 +118,4 @@ class TestAssignment1(TestCase):
         pass_status = my_assignment.main(os.path.join("data", "accel_data.csv"))
 
         # Using the real data, the pass status should be false.
-        # Note that this is equivalent to assert pass_status == False
-        assert not pass_status
+        assert pass_status==False
