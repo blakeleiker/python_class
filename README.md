@@ -28,14 +28,15 @@ wget https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py --user
 ```
 
-To check that `pip3` and `virtualvenv` are working properly:
+Next, check that `pip3` and `virtualvenv` are working properly:
 
 ```shell
 pip3 --version
 virtualenv --version
 ```
 
-If it can't find `pip3`, it probably installed it somewhere that's not on your PATH. Try this:
+If the version numbers for pip and virtualvenv are output, then everything is installed correctly. If it can't find `pip3`, it probably installed it somewhere that's not on your PATH. Try this:
+
 ```shell
 PATH=$PATH:$HOME/.local/bin
 ```
