@@ -64,6 +64,7 @@ Here's a list of useful resources for more information.
 Documentation and tutorials:
 
 - [Official Python Tutorial](https://docs.python.org/3/tutorial/)
+- [The Full Python Documentation](https://docs.python.org/3/index.html)
 - [Virtual Environments](https://virtualenv.pypa.io)
 - [Pip](https://pypi.org/project/pip/)
 - [General Python Tutorial](http://www.scipy-lectures.org/intro/language/python_language.html)
