@@ -28,14 +28,15 @@ wget https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py --user
 ```
 
-To check that `pip3` and `virtualvenv` are working properly:
+Next, check that `pip3` and `virtualvenv` are working properly:
 
 ```shell
 pip3 --version
 virtualenv --version
 ```
 
-If it can't find `pip3`, it probably installed it somewhere that's not on your PATH. Try this:
+If the version numbers for pip and virtualvenv are output, then everything is installed correctly. If it can't find `pip3`, it probably installed it somewhere that's not on your PATH. Try this:
+
 ```shell
 PATH=$PATH:$HOME/.local/bin
 ```
@@ -53,6 +54,8 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
+Note that if your virtual environment has been activated successfully, your terminal prompt should now start with `(venv)`. Every time you open a new terminal session, you will need to `source` the `activate` script in order to run the assignments in this course. 
+
 Now, you're ready to start the [first assignment](modules/Assignment1)!
 
 ## References
@@ -61,6 +64,7 @@ Here's a list of useful resources for more information.
 Documentation and tutorials:
 
 - [Official Python Tutorial](https://docs.python.org/3/tutorial/)
+- [The Full Python Documentation](https://docs.python.org/3/index.html)
 - [Virtual Environments](https://virtualenv.pypa.io)
 - [Pip](https://pypi.org/project/pip/)
 - [General Python Tutorial](http://www.scipy-lectures.org/intro/language/python_language.html)
