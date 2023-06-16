@@ -2,7 +2,7 @@
 
 You're a hotshot engineer testing a new, experimental accelerometer. The lab just sent over a CSV file containing acceleration data from a test, and its up to you to use your incredible python skills to process this data and ensure that the sensor meets performance requirements. Your task is to write a class to parse the csv file, compute the magnitude of the data, and plot the results.
 
-To help you succeed, I went ahead and wrote the test for this class to ensure that it behaves as expected. To run the test, navigate into the `modules/Assignment1` directory and run pytest. Make sure that your virtual environment is active first! 
+To help you succeed, I went ahead and wrote the test for this class to ensure that your python program behaves as expected. To run the test, navigate into the `modules/Assignment1` directory and run pytest. Make sure that your virtual environment is active first! 
 
 ```bash
 cd modules/Assignment1
