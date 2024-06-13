@@ -5,7 +5,7 @@ This repository contains course materials for an introductory course on the Pyth
 
 ## Getting started
 
-Your first task is to create a new python virtual environment. To do this, first you need to install pip3 and virtualenv. 
+Your first task is to create a new python virtual environment. To do this, first you need to install pip3. 
 
 Note that these instructions assuming that you are working in a Linux environment. The process is similar for OSX or Windows, but I don't cover it here. Refer to the official pip installation instructions for all possible installation methods.
 
@@ -44,40 +44,20 @@ If it can't find `pip3`, pip has probably been installed somewhere that's not on
 PATH=$PATH:$HOME/.local/bin
 ```
 
-### Installing Virtualenv
+If you're able to get the version numbers for pip, then everything is installed correctly. 
 
-Once pip has been installed, you can use pip to install a package called virtualenv. This package provides a helpful interface to create and manage your python virtual environments.
-
-```shell
-pip3 install virtualenv
-```
-
-Again, its possible that you won't be able to run this command because you don't have installation permissions in your current working environment. You can install virtualenv to an allowable location by adding the `--user` option, shown below.
-
-```shell
-pip3 install --user virtualenv
-```
-
-Next, check that `virtualvenv` is working properly by typing this command:
-
-```shell
-virtualenv --version
-```
-
-If you're able to get the version numbers for pip and virtualvenv, then everything is installed correctly. 
-
-Next, clone this repository and create your Python 3 virtualenv.
+Next, clone this repository and create your Python 3 virtual environment.
 
 ```shell
 git clone https://github.com/blakeleiker/python_class.git
-cd python_class/py_env
-# Create a new environment named venv:
-virtualenv -p /usr/bin/python3 venv
+cd python_class
+# Create a new environment named tutorial-env:
+python3 -m venv tutorial-env
 # Activate this environment:
-source venv/bin/activate
+source tutorial-env/bin/activate
 ```
 
-Note that if your virtual environment has been activated successfully, your terminal prompt should now start with `(venv)`. Every time you open a new terminal session, you will need to `source` the `activate` script in order to run the assignments in this course. 
+Note that if your virtual environment has been activated successfully, your terminal prompt should now start with `(tutorial-env)`. Every time you open a new terminal session, you will need to `source` the `activate` script in order to run the assignments in this course. 
 
 But you're not done yet! We've created a new virtual environment, and now that we have activated the environment we can install our desired python packages to that environment. Run the following command to install all of our packages.
 
@@ -86,7 +66,7 @@ But you're not done yet! We've created a new virtual environment, and now that w
 pip3 install -r requirements.txt
 ```
 
-Note that in the above command, we're installing every package contained in the file `py_env/requirements.txt`. You can open this file up to inspect which packages we've chosen to install. This is a common way for python projects to organize their package dependencies. 
+Note that in the above command, we're installing every package contained in the file `requirements.txt`. You can open this file up to inspect which packages we've chosen to install. This is a common way for python projects to organize their package dependencies. 
 
 Now, you're ready to start the [first assignment](modules/Assignment1)!
 
@@ -97,7 +77,7 @@ Documentation and tutorials:
 
 - [Official Python Tutorial](https://docs.python.org/3/tutorial/)
 - [The Full Python Language Reference](https://docs.python.org/3/index.html)
-- [Virtual Environments](https://virtualenv.pypa.io)
+- [Virtual Environments](https://docs.python.org/3/tutorial/venv.html)
 - [Pip](https://pypi.org/project/pip/)
 - [General Python Tutorial](http://www.scipy-lectures.org/intro/language/python_language.html)
 - [Modules and Code Re-Use](http://www.scipy-lectures.org/intro/language/reusing_code.html)

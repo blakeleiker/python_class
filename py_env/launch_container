@@ -1,6 +1,0 @@
-docker run -it \
-    --name="python_class_container" \
-    --volume="`pwd`/../:/python_class:rw" \
-    -p 8888:8888 \
-    mikepantz/python_class:latest \
-    bash
