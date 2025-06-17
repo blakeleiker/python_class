@@ -14,7 +14,8 @@ class Assignment1:
         return pass_status
 
     def parse_csv(self, csv_path):
-        # Part 1! Load the csv into a DataFrame, and return the DataFrame.
+        # Part 1! Load the csv into a DataFrame, update the index of the DataFrame to 
+        # be Time, and return the DataFrame.
 
         pass
 
